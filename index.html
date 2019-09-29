@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aditya's Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d8d56e3779.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="#home" class="nav__logo logo">AB</a>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro-container" id="home">
+        <div id="particles-js"></div>
+        <div class="intro-container__description">
+          <h6 class="intro-container__name">
+            Hello, I'm Aditya
+          </h6>
+          <h1 class="intro-container__title ">
+            Frontend Developer, React Developer
+          </h1>
+          <div class="contact-container">
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/AdiBev"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="https://www.linkedin.com/in/aditya-b-072613183/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="mailto:adityabev@gmail.com"
+            >
+              <i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="about">
+        <section class="about-me">
+          <h3 class="about-me__heading">Hello I'm Aditya nice to meet you.</h3>
+          <div class="about-me__description">
+            <p>
+              I am a Frontend developer and React developer. I use different
+              tools and technologies to make beautiful web apps and websites. I
+              love what I do and I take pride in what I'm doing.
+            </p>
+            <p>Here are the technologies and the tools I use</p>
+          </div>
+        </section>
+
+        <div class="skills">
+          <div class="skills__frontend">
+            <h3 class="skills__heading">Frontend Developer</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item">
+                HTML5, CSS3, Sass
+              </li>
+              <li class="skills__list-item">JavaScript, jQuery</li>
+              <li class="skills__list-item">React, Redux</li>
+              <li class="skills__list-item">Bootstrap, Material-UI</li>
+              <li class="skills__list-item">
+                Ant Design, styled-components
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills__backend">
+            <h3 class="skills__heading">Backend Developer</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item">
+                Node.js
+              </li>
+              <li class="skills__list-item">Express.js</li>
+              <li class="skills__list-item">MongoDB</li>
+              <li class="skills__list-item">Mongoose</li>
+              <li class="skills__list-item">Passport.js</li>
+            </ul>
+          </div>
+
+          <div class="skills__tools">
+            <h3 class="skills__heading">Dev Tools</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item">
+                Webpack
+              </li>
+              <li class="skills__list-item">Git</li>
+              <li class="skills__list-item">Github</li>
+              <li class="skills__list-item">Visual Studio Code, Atom</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects" id="portfolio">
+        <h3 class="projects__heading">My Recent Projects</h3>
+        <div class="projects__container">
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Rain falling on plant image."
+                srcset="img/rain-min.jpg 500w, img/rain.jpg 1000w"
+                sizes="(max-width: 56.25em) 100vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">WeatherSense</h3>
+                <p class="projects__detail">
+                  Built with React, styled-components and Openweather api
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://weathersensepro.firebaseapp.com/"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/WeatherSense"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Vegetables image."
+                srcset="img/food-min.jpg 300w, img/food.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">YumRecipes</h3>
+                <p class="projects__detail">
+                  A recipe finder app built with React, Redux, Bootstrap4
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://recipe-finder-007.firebaseapp.com/"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/YUMRecipes"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Pokeball image."
+                srcset="img/pokeball-min.jpg 300w, img/pokeball.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">Pokedex app</h3>
+                <p class="projects__detail">
+                  Pokedex CRUD app built with React, Redux, Ant Design
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="http://pokedex-crudapp.herokuapp.com/"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/pokedex-crudapp"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Pokeball image."
+                srcset="img/pokeball-min.jpg 300w, img/pokeball.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">Pokedex server</h3>
+                <p class="projects__detail">
+                  Pokedex CRUD api server built with Node.js, Express.js,
+                  MongoDB, Mongoose
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://pokemon-api-server.herokuapp.com"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/crudapp-server"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Airplane's wing image."
+                srcset="img/travel-min.jpg 300w, img/travel.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">Natures</h3>
+                <p class="projects__detail">
+                  Simple Travel agency website built with HTML5, CSS3,
+                  Bootstrap4
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://adibev.github.io/Natures/"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/Natures"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Laptop image"
+                srcset="img/portfolio-min.jpg 300w, img/portfolio.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">Portfolio</h3>
+                <p class="projects__detail">
+                  Personal Portfolio made with React, Material-UI
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://portfolio-adi.firebaseapp.com/Portfolio"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/AdiPortfolio"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <a
+            class="inline-button"
+            rel="noopener"
+            target="_blank"
+            href="https://github.com/AdiBev?tab=repositories"
+            >See more</a
+          >
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <a href="#home" class="footer__link logo">AB</a>
+          <div class="contact-container footer__icons">
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="https://github.com/AdiBev"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="https://www.linkedin.com/in/aditya-b-072613183/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+
+            <a
+              class="social-icons"
+              rel="noopener"
+              target="_blank"
+              href="mailto:adityabev@gmail.com"
+            >
+              <i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <p class="footer__description">
+            Handcrafted with Flexbox by me &#9400; 2019
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./node_modules/particles.js/particles.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
