@@ -14,9 +14,7 @@
     },
     "author": "Aditya",
     "license": "ISC",
-    "dependencies": {
-        "particles.js": "^2.0.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "autoprefixer": "^7.1.4",
         "concat": "^1.0.3",
