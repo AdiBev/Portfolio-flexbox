@@ -26,6 +26,14 @@
     height: 80vh;
   }
 
+  @media only screen and (max-width: $bp-small) {
+    height: 70vh;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: 60vh;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -50,7 +58,11 @@
     max-width: 150rem;
 
     @media only screen and (max-width: $bp-medium) {
-      max-width: 250rem;
+      width: 100rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 50rem;
     }
   }
 
@@ -59,10 +71,6 @@
 
     @media only screen and (max-width: $bp-medium) {
       text-align: center;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-      font-size: 2.5rem;
     }
   }
 
@@ -80,8 +88,10 @@
       text-align: center;
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-      font-size: 2.5rem;
+    @media only screen and (max-width: $bp-small) {
+      span {
+        display: block;
+      }
     }
   }
 
@@ -101,17 +111,25 @@
   z-index: 15;
   margin-top: 2rem;
 
-  .social-icons:link,
-  .social-icons:visited {
-    color: var(--color-grey-light-1);
-    font-size: 3.5rem;
-    text-decoration: none;
-    text-align: center;
-    margin-left: 4rem;
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 3rem;
+    margin-right: 4rem;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-      font-size: 4rem;
+  .social-link:link,
+  .social-link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    margin-left: 4rem;
+  }
+
+  .icon {
+    width: 40px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 30px;
     }
+
   }
 }
 
@@ -127,28 +145,29 @@
     font-size: 3rem;
 
     @media only screen and (max-width: $bp-smallest) {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
   }
 
   &__description {
     margin-top: 2rem;
     max-width: 80rem;
-    line-height: 2;
+    line-height: 1.8;
     font-size: 2rem;
+    text-align: justify;
 
-    @media only screen and (max-width: $bp-small) {
-      margin-left: 0.5rem;
+    p:last-child {
+      margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 1rem;
       margin-right: 1rem;
-      text-align: justify;
+      line-height: 1.5;
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      font-size: 1.5rem;
       max-width: 100rem;
-      margin-left: 0.5rem;
-      margin-right: 1rem;
-      text-align: justify;
     }
   }
 }
