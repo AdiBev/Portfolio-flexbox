@@ -57,7 +57,7 @@
     z-index: 20;
     max-width: 150rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       width: 100rem;
     }
 
@@ -67,11 +67,8 @@
   }
 
   &__name {
-    font-size: 3rem;
-
-    @media only screen and (max-width: $bp-medium) {
-      text-align: center;
-    }
+    text-align: center;
+    font-size: 3.5rem;
   }
 
   &__title {
@@ -80,18 +77,27 @@
     font-weight: 600;
 
     @media only screen and (max-width: $bp-large) {
-      font-size: 3.5rem;
+      text-align: center;
     }
 
     @media only screen and (max-width: $bp-medium) {
       font-size: 3rem;
-      text-align: center;
     }
 
     @media only screen and (max-width: $bp-small) {
       span {
         display: block;
       }
+    }
+  }
+
+  &__icons {
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-right: 4rem;
     }
   }
 
@@ -109,12 +115,7 @@
   align-items: center;
   position: relative;
   z-index: 15;
-  margin-top: 2rem;
-
-  @media only screen and (max-width: $bp-smallest) {
-    margin-top: 3rem;
-    margin-right: 4rem;
-  }
+  margin-top: 3rem;
 
   .social-link:link,
   .social-link:visited {
@@ -126,10 +127,9 @@
   .icon {
     width: 40px;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
       width: 30px;
     }
-
   }
 }
 
@@ -277,7 +277,7 @@
   &__card {
     max-width: 35rem;
     border-radius: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     position: relative;
     color: #fff;
     overflow: hidden;
@@ -326,6 +326,7 @@
   &__detail {
     font-size: 1.5rem;
     text-align: center;
+    margin: 0 1rem 0 1rem;
   }
 
   &__link:link,
@@ -338,8 +339,13 @@
     display: block;
     width: 18rem;
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.3rem;
+    }
+
     background-image: linear-gradient(
       to right,
       var(--color-primary) 0%,
@@ -431,6 +437,10 @@
     @media only screen and (max-width: $bp-smallest) {
       font-size: 3rem !important;
     }
+  }
+
+  &__icons {
+    margin-right: 3rem;
   }
 
   &__description {
