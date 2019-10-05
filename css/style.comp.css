@@ -58,6 +58,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .intro-container {
       height: 80vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .intro-container {
+      height: 70vh; } }
+  @media only screen and (max-width: 25em) {
+    .intro-container {
+      height: 60vh; } }
   .intro-container::before {
     content: "";
     position: absolute;
@@ -74,31 +80,34 @@ body {
     transform: translate(-40%, -40%);
     z-index: 20;
     max-width: 150rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 68.75em) {
       .intro-container__description {
-        max-width: 250rem; } }
+        width: 100rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .intro-container__description {
+        width: 50rem; } }
   .intro-container__name {
-    font-size: 3rem; }
-    @media only screen and (max-width: 56.25em) {
-      .intro-container__name {
-        text-align: center; } }
-    @media only screen and (max-width: 25em) {
-      .intro-container__name {
-        font-size: 2.5rem; } }
+    text-align: center;
+    font-size: 3.5rem; }
   .intro-container__title {
     margin-top: 1rem;
     font-size: 4rem;
     font-weight: 600; }
     @media only screen and (max-width: 68.75em) {
       .intro-container__title {
-        font-size: 3.5rem; } }
+        text-align: center; } }
     @media only screen and (max-width: 56.25em) {
       .intro-container__title {
-        font-size: 3rem;
-        text-align: center; } }
-    @media only screen and (max-width: 25em) {
-      .intro-container__title {
-        font-size: 2.5rem; } }
+        font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .intro-container__title span {
+        display: block; } }
+  @media only screen and (max-width: 56.25em) {
+    .intro-container__icons {
+      margin-right: 5rem; } }
+  @media only screen and (max-width: 25em) {
+    .intro-container__icons {
+      margin-right: 4rem; } }
   .intro-container__intro {
     margin-top: 1rem;
     font-size: 2rem; }
@@ -109,18 +118,17 @@ body {
   align-items: center;
   position: relative;
   z-index: 15;
-  margin-top: 2rem; }
-  .contact-container .social-icons:link,
-  .contact-container .social-icons:visited {
+  margin-top: 3rem; }
+  .contact-container .social-link:link,
+  .contact-container .social-link:visited {
     color: var(--color-grey-light-1);
-    font-size: 3.5rem;
     text-decoration: none;
-    text-align: center;
     margin-left: 4rem; }
-    @media only screen and (max-width: 68.75em) {
-      .contact-container .social-icons:link,
-      .contact-container .social-icons:visited {
-        font-size: 4rem; } }
+  .contact-container .icon {
+    width: 40px; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-container .icon {
+        width: 30px; } }
 
 .about-me {
   display: flex;
@@ -132,24 +140,23 @@ body {
     font-size: 3rem; }
     @media only screen and (max-width: 25em) {
       .about-me__heading {
-        font-size: 2rem; } }
+        font-size: 2.3rem; } }
   .about-me__description {
     margin-top: 2rem;
     max-width: 80rem;
-    line-height: 2;
-    font-size: 2rem; }
-    @media only screen and (max-width: 37.5em) {
+    line-height: 1.8;
+    font-size: 2rem;
+    text-align: justify; }
+    .about-me__description p:last-child {
+      margin-top: 1rem; }
+    @media only screen and (max-width: 56.25em) {
       .about-me__description {
-        margin-left: 0.5rem;
+        margin-left: 1rem;
         margin-right: 1rem;
-        text-align: justify; } }
+        line-height: 1.5; } }
     @media only screen and (max-width: 25em) {
       .about-me__description {
-        font-size: 1.5rem;
-        max-width: 100rem;
-        margin-left: 0.5rem;
-        margin-right: 1rem;
-        text-align: justify; } }
+        max-width: 100rem; } }
 
 .skills {
   margin: 5rem auto;
@@ -226,7 +233,7 @@ body {
 .projects__card {
   max-width: 35rem;
   border-radius: 1.5rem;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   position: relative;
   color: #fff;
   overflow: hidden;
@@ -267,7 +274,8 @@ body {
 
 .projects__detail {
   font-size: 1.5rem;
-  text-align: center; }
+  text-align: center;
+  margin: 0 1rem 0 1rem; }
 
 .projects__link:link, .projects__link:visited {
   color: var(--color-grey-light-1);
@@ -278,10 +286,13 @@ body {
   display: block;
   width: 18rem;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 1rem 1rem;
   background-image: linear-gradient(to right, var(--color-primary) 0%, var(--color-blue) 100%);
   transition: all 1s ease-in; }
+  @media only screen and (max-width: 37.5em) {
+    .projects__link:link, .projects__link:visited {
+      font-size: 1.3rem; } }
   .projects__link:link:hover, .projects__link:visited:hover {
     background-image: linear-gradient(to right, var(--color-blue) 0%, var(--color-primary) 100%); }
 
@@ -345,6 +356,9 @@ body {
     .footer__link {
       font-size: 3rem !important; } }
 
+.footer__icons {
+  margin-right: 3rem; }
+
 .footer__description {
   display: block;
   margin-top: 2rem;
@@ -371,9 +385,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%; }
-  @media only screen and (max-width: 25em) {
-    #particles-js {
-      display: none; } }
 
 .main {
   position: relative; }
