@@ -1,5 +1,5 @@
 {
-    "name": "Portfolio-Aditya",
+    "name": "Portfolio Aditya",
     "version": "1.0.0",
     "description": "Portfolio to show case my work",
     "main": "index.js",
@@ -14,7 +14,6 @@
     },
     "author": "Aditya",
     "license": "ISC",
-    "dependencies": {},
     "devDependencies": {
         "autoprefixer": "^7.1.4",
         "concat": "^1.0.3",
