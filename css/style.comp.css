@@ -135,12 +135,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .about-me {
+      padding: 0 1.5rem 0 1.5rem; } }
   .about-me__heading {
     margin-top: 5rem;
     font-size: 3rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 37.5em) {
       .about-me__heading {
         font-size: 2.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about-me__heading {
+        font-size: 2.1rem; } }
   .about-me__description {
     margin-top: 2rem;
     max-width: 80rem;
