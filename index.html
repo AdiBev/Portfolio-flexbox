@@ -33,7 +33,7 @@
           <h6 class="intro-container__name">
             Hello, I'm Aditya
           </h6>
-          <h1 class="intro-container__title ">
+          <h1 class="intro-container__title">
             <span>Frontend Developer,</span><span>React Developer</span>
           </h1>
           <div class="contact-container intro-container__icons">
@@ -43,36 +43,41 @@
               target="_blank"
               href="https://github.com/AdiBev"
             >
-              <img class="icon" src="./img/github.svg" alt="Github logo."/>
+              <img class="icon" src="./img/github.svg" alt="Github logo." />
             </a>
 
             <a
-            class="social-link"
+              class="social-link"
               rel="noopener"
               target="_blank"
               href="https://linkedin.com/in/aditya-bevoor-072613183/"
-              ><img class="icon" src="./img/linkedin.svg" alt="Linkedin logo."/>
+              ><img
+                class="icon"
+                src="./img/linkedin.svg"
+                alt="Linkedin logo."
+              />
             </a>
 
             <a
-            class="social-link"
+              class="social-link"
               rel="noopener"
               target="_blank"
               href="mailto:adityabev@gmail.com"
             >
-            <img class="icon" src="./img/email.svg" alt="Email logo."/></a>
+              <img class="icon" src="./img/email.svg" alt="Email logo."
+            /></a>
           </div>
         </div>
       </div>
 
       <div class="about-section" id="about">
         <section class="about-me">
-          <h3 class="about-me__heading">Hello I'm Aditya nice to meet you.</h3>
+          <h3 class="about-me__heading">Hello I'm Aditya, nice to meet you.</h3>
           <div class="about-me__description">
             <p>
-              I am a Frontend developer and React developer. I use different
-              tools and technologies to make beautiful web apps and websites. I
-              love what I do and I take pride in what I'm doing.
+              I am a Fullstack developer currently working as a React developer.
+              I use different tools and technologies to make beautiful web apps
+              and websites. I love what I do and I take pride in what I'm doing.
             </p>
             <p>Here are the technologies and the tools I use</p>
           </div>
@@ -85,8 +90,8 @@
               <li class="skills__list-item">
                 HTML5, CSS3, Sass
               </li>
-              <li class="skills__list-item">JavaScript, jQuery</li>
-              <li class="skills__list-item">React, Redux</li>
+              <li class="skills__list-item">JavaScript, Typescript</li>
+              <li class="skills__list-item">React, Redux, Recoil</li>
               <li class="skills__list-item">Bootstrap, Material-UI</li>
               <li class="skills__list-item">
                 Ant Design, styled-components
@@ -132,22 +137,54 @@
                 src="img/rain.jpg"
               />
               <figcaption class="projects__description">
-                <h3 class="projects__name">WeatherSense</h3>
+                <h3 class="projects__name">Search local</h3>
                 <p class="projects__detail">
-                  Built with React, styled-components and Openweather api
+                  Built with React, Typescript, styled-components and Yelp
+                  graphql api
                 </p>
                 <a
                   class="projects__link"
                   rel="noopener"
                   target="_blank"
-                  href="https://weathersensepro.firebaseapp.com/"
+                  href="https://search-local-c867f.web.app/"
                   >View Project</a
                 >
                 <a
                   class="projects__link"
                   rel="noopener"
                   target="_blank"
-                  href="https://github.com/AdiBev/WeatherSense"
+                  href="https://github.com/AdiBev/search-local"
+                  >View Code</a
+                >
+              </figcaption>
+              <div class="overlay"></div>
+            </figure>
+          </div>
+
+          <div class="projects__card">
+            <figure>
+              <img
+                class="projects__img"
+                alt="Rain falling on plant image."
+                src="img/rain.jpg"
+              />
+              <figcaption class="projects__description">
+                <h3 class="projects__name">Yelp api Proxy server</h3>
+                <p class="projects__detail">
+                  Built with Node.js, Express, graphql-request
+                </p>
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://garnet-gilded-phosphorus.glitch.me/"
+                  >View Project</a
+                >
+                <a
+                  class="projects__link"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://github.com/AdiBev/yelp-graphql-api-server"
                   >View Code</a
                 >
               </figcaption>
@@ -253,38 +290,6 @@
             <figure>
               <img
                 class="projects__img"
-                alt="Airplane's wing image."
-                src="img/travel.jpg"
-              />
-              <figcaption class="projects__description">
-                <h3 class="projects__name">Natures</h3>
-                <p class="projects__detail">
-                  Simple Travel agency website built with HTML5, CSS3,
-                  Bootstrap4
-                </p>
-                <a
-                  class="projects__link"
-                  rel="noopener"
-                  target="_blank"
-                  href="https://adibev.github.io/Natures/"
-                  >View Project</a
-                >
-                <a
-                  class="projects__link"
-                  rel="noopener"
-                  target="_blank"
-                  href="https://github.com/AdiBev/Natures"
-                  >View Code</a
-                >
-              </figcaption>
-              <div class="overlay"></div>
-            </figure>
-          </div>
-
-          <div class="projects__card">
-            <figure>
-              <img
-                class="projects__img"
                 alt="Laptop image"
                 src="img/portfolio.jpg"
               />
@@ -329,26 +334,29 @@
           <a href="#home" class="footer__link logo">AB</a>
           <div class="contact-container footer__icons">
             <a
-            class="social-link"
+              class="social-link"
               rel="noopener"
               target="_blank"
               href="https://github.com/AdiBev"
-              > <img class="icon" src="./img/github.svg" alt="Github logo." /> </a>
+            >
+              <img class="icon" src="./img/github.svg" alt="Github logo." />
+            </a>
 
             <a
-            class="social-link"
+              class="social-link"
               rel="noopener"
               target="_blank"
               href="https://linkedin.com/in/aditya-bevoor-072613183/"
-              ><img class="icon" src="./img/linkedin.svg" alt="Linkedin logo."/></a>
+              ><img class="icon" src="./img/linkedin.svg" alt="Linkedin logo."
+            /></a>
 
             <a
-            class="social-link"
+              class="social-link"
               rel="noopener"
               target="_blank"
               href="mailto:adityabev@gmail.com"
             >
-            <img class="icon" src="./img/email.svg" alt="Email logo."/>
+              <img class="icon" src="./img/email.svg" alt="Email logo." />
             </a>
           </div>
           <p class="footer__description">
